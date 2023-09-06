@@ -28,12 +28,12 @@ public class StudentController {
         return "students";
     }
 
-    @GetMapping("/students/add")
+   /* @GetMapping("/students/add")
     public String createStudentForm(Model model){
         Student student =new Student();
         model.addAttribute("student",student);
         return "create_student";
-    }
+    }*/
     @PostMapping("/students")
     public String saveStudent(@ModelAttribute("student") Student student){
        studentService.saveStudent(student);
