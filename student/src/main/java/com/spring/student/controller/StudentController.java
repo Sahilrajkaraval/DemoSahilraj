@@ -22,11 +22,11 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @GetMapping("/students")
+  /* @GetMapping("/students")
     public String listStudents(Model model){
         model.addAttribute("students", studentService.getAllStudent());
         return "students";
-    }
+    }*/
 
     @GetMapping("/students/add")
     public String createStudentForm(Model model){
